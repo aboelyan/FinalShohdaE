@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{564F4BE8-1678-4E21-9BB7-A8D0A09EA8EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalShohdaE</RootNamespace>
+    <AssemblyName>FinalShohdaE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Activity_FRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Activity_FRM.Designer.cs">
+      <DependentUpon>Activity_FRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AIDSFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AIDSFRM.Designer.cs">
+      <DependentUpon>AIDSFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BNFFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BNFFRM.Designer.cs">
+      <DependentUpon>BNFFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FLL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FLL.Designer.cs">
+      <DependentUpon>FLL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_BuckUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_BuckUp.Designer.cs">
+      <DependentUpon>Form_BuckUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FORM_RESTOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FORM_RESTOR.Designer.cs">
+      <DependentUpon>FORM_RESTOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\INJFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\INJFRM.Designer.cs">
+      <DependentUpon>INJFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MAIN_FRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MAIN_FRM.Designer.cs">
+      <DependentUpon>MAIN_FRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SHOFRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SHOFRM.Designer.cs">
+      <DependentUpon>SHOFRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SUBMINU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SUBMINU.Designer.cs">
+      <DependentUpon>SUBMINU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UU.Designer.cs">
+      <DependentUpon>UU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Activity_FRM.resx">
+      <DependentUpon>Activity_FRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AIDSFRM.resx">
+      <DependentUpon>AIDSFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BNFFRM.resx">
+      <DependentUpon>BNFFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FLL.resx">
+      <DependentUpon>FLL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_BuckUp.resx">
+      <DependentUpon>Form_BuckUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FORM_RESTOR.resx">
+      <DependentUpon>FORM_RESTOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\INJFRM.resx">
+      <DependentUpon>INJFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MAIN_FRM.resx">
+      <DependentUpon>MAIN_FRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SHOFRM.resx">
+      <DependentUpon>SHOFRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SUBMINU.resx">
+      <DependentUpon>SUBMINU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UU.resx">
+      <DependentUpon>UU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goralogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\90872973_1355870887956183_6161003059943047168_n.png" />
+    <Content Include="Resources\download.jpg" />
+    <None Include="Resources\download1.jpg" />
+    <Content Include="Resources\_program-Final.png" />
+    <None Include="Resources\_program-Final1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
